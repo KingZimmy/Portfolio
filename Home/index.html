@@ -1,0 +1,631 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177053709-1"></script>
+    <script src="js/index.js"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-177053709-1');
+    </script>
+  </head>
+  <body onload="getYear()">
+    <div id = "top"></div>
+    <div class="topnav sticky">
+      <button id = "expandMenu" onClick = "expandMenu();"><img src = "images/hamburger.png" width = "10%"></button>
+      <button id = "shrinkMenu" onClick = "shrinkMenu();"><img src = "images/hamburger.png" width = "10%"></button>
+      <a onclick="removeMenuWhenClicked()" class="menu1" href="#top">Home</a>
+      <a onclick="removeMenuWhenClicked()" class = "menu2" href="#about">About</a>
+      <a onclick="removeMenuWhenClicked()" class = "menu3" href="#resume">Resume</a>
+      <a onclick="removeMenuWhenClicked()" class = "menu4" href="#portfolio">Portfolio</a>
+      <a onclick="removeMenuWhenClicked()" class = "menu5" href="http://maramandernach/homework.html">Homework</a>
+      <a onclick="removeMenuWhenClicked()" class = "menu6" href="#contact">Contact</a>
+    </div>
+    <div class="content">
+      <div class = "container">
+        <img id = "background" src = "images/sunset-404072_1920.jpg" alt = "background sunset image" width = "100%">
+        <div class = "centered">
+          <h1>Mara Mandernach, Web Developer</h1>
+          <p>___________________________</p><br>
+          <p>Check out my portfolio!</p>
+        </div>
+      </div>
+      <div id = "about">
+        <div class = "socials">
+          <a href="https://www.linkedin.com/in/mara-anya-mandernach-54899586/" target=_blank class="fa fa-linkedin"></a>
+          <p>Check out my LinkedIn</p>
+        </div><br><br>
+
+        <h1>About Me</h1><br><br>
+          <div class = "flex">
+          <div class = "image"><img src = "images/profile.jpg" alt = "picture of Mara Mandernach (me)" ></div>
+          <p>Hello! My name is Mara Mandernach! I am currently a single mother of one boy named Nikolai. I have recently been certified in website development. I currently work tech support at DMACC in Ankeny, Iowa. I would like to find a job that is in my field. I am good at learning new things and I would like to think I am good at working in a team!</p>
+          </div>
+      </div>
+
+      <div id = "resume">
+        <h1>Resume</h1><br>
+        <p>Click to view my resume</p><br>
+        <a href = "Mara-Mandernach.pdf"><img src ="images/resume.png"></a>
+      </div>
+
+      <div id = "portfolio">
+        <h1>Portfolio</h1><br><br>
+
+        <h2>HTML/CSS/JS</h2>
+        <div class = "row">
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/summit.png" alt = "Summit Farms Website" height="100%">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>Summit Farms</h3>
+                  <p>Class - Introduction to HTML & CSS</p>
+                    <p>- HTML</p>
+                    <p>- CSS</p><br>
+                  <a href = "http://maramandernach.net/WDV101/homework/summit_site/index.html" target = _blank><button>View Site</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/Koala.png" alt = "Adventure Travel Project Website" height="100%">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>Koala Website</h3>
+                  <p>Class - Introduction to HTML & CSS</p>
+                    <p>- HTML</p>
+                    <p>- CSS</p><br>
+                  <a href = "http://maramandernach.net/WDV101/homework/Koala_Site_2020/index.html" target = _blank><button>View Site</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Additional Projects</h2>
+
+        <div class = "row">
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/Chocolate.png" alt = "Cocoa Website" height="100%">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>Cocoa Project</h3>
+                  <p>Class - Introduction to HTML & CSS</p>
+                   <p>- HTML</p>
+                    <p>- CSS</p><br>
+                  <a href = "http://maramandernach.net/WDV101/homework/cocoa_site/index.html" target = _blank><button>View Site</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/White_Lotus.png" alt = "Order of White Lotus" height="100%">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>Order of the White Lotus</h3>
+                  <p>Class - Introduction to HTML & CSS</p>
+                    <p>- HTML</p>
+                    <p>- CSS</p>
+					<p>BootStrap</p><br>
+                  <a href = "http://maramandernach.net/WDV101/homework/BS_Grid/index.html" target = _blank ><button>View Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "row">
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/First.png" alt = "First Steps Child Care" height="100%">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>First Steps Child Care</h3>
+                  <p>Class - Introduction to HTML & CSS</p>
+                    <p>- HTML</p>
+                    <p>- CSS</p>
+                    <p>- Flexbox</p><br>
+                  <a href = "http://maramandernach.net/WDV101/homework/Finals%20V.3/index.html" target = _blank ><button>View Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/video.png" alt = "Midwest Game Developers Conference Website" height="100%">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>Butterfly Video Final</h3>
+                  <p>Class - Introduction to Photoshop</p>
+                    <p>Adobe Photoshop</p>
+                    <p>- Additional Custom CSS</p><br>
+                  <a href = "http://maramandernach.net/WDV131/Final/Butterfly.mp4" target = _blank ><button>View Video</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2> Additional Projects</h2>
+        <div class = "row">
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/Examples.png" alt = "CSS Example" height="100%">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>CSS Examples</h3>
+                  <p>Class - Advanced CSS</p>
+                    <p>- CSS</p>
+					<p>- CSS Animations & Transitions</p><br>
+                  <a href = "http://maramandernach.net/WDV205/Homework/css_example/example_1.html" target = _blank ><button>View Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/basic.png" alt = "Basic Webpage" height="100%">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>Basic Webpage</h3>
+					<p>Class - Advanced CSS</p>
+                    <p>- HTML</p>
+                    <p>- SASS/SCSS</p>
+                    <p>- Media Queries</p>
+                    <p>- Bootstrap</p><br>
+                  <a href = "http://maramandernach.net/WDV205/Homework/basicPage(BS)/basicPage/basicPage.html" target = _blank ><button>View Website</button></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Additional Projects</h2>
+
+        <div class = "row">
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/banner.png" alt = "Banner AD" height="100%">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>Banner AD</h3>
+                  <p>Class - Advanced CSS</p>
+                    <p>- HTML</p>
+                    <p>- CSS</p>
+					<p>- Media Queries</p><br>
+                  <a href = "http://maramandernach.net/WDV205/Homework/Banner_Ad/index.html" target = _blank ><button>View Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/2d.png" alt = "2D & 3D Transition" height="100%">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>2D & 3D Transformations</h3>
+					<p>Class - Advanced CSS</p>
+                    <p>- HTML</p>
+                    <p>- CSS</p>
+                    <p>- Media Queries</p>
+                    <p>- Transformation</p><br>
+                  <a href = "http://maramandernach.net/WDV205/Homework/Transformation/2D_&_3D.html" target = _blank ><button>View Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "row">
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/transition.png" alt = "Transitions" height="100%">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>CSS Transitions</h3>
+                  <p>Class - Advanced CSS</p>
+                    <p>- HTML</p>
+                    <p>- CSS</p>
+                    <p>- Media Queries</p>
+                    <p>- Transitions</p><br>
+				  <a href = "http://maramandernach.net/WDV205/Homework/Transition/CSS_Transition.html" target = _blank ><button>View Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/animation.png" alt = "CSS Animation" height="100%">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>CSS Animation</h3>
+                  <p>Class - Advanced CSS</p>
+                    <p>- HTML</p>
+                    <p>- CSS</p>
+                    <p>- Flex Box</p>
+                    <p>- Animation</p><br>
+                  <a href = "http://maramandernach.net/WDV205/Homework/Animation/index.html" target = _blank ><button>View Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "row">
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/number.png" alt = "JavaScript Number" height="100%">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>JS Random Number</h3>
+                  <p>Class - Introduction to JavaScript</p>
+                    <p>- JavaScript</p>
+                    <p>- HTML</p>
+                    <p>- CSS</p><br>
+                  <a href = "http://maramandernach.net/WDV221/Homework/Unit-7%20Assignment/Random_Number.html" target = _blank ><button>View Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Addtional Projects</h2>
+
+        <div class = "row">
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/WP_1.png" alt = "Wordpress Main Site" height="100%">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>WordPress Main Site</h3>
+                  <p>Class - Introduction to Wordpress</p>
+                    <p>- Content Writing</p>
+                    <p>- HTML</p>
+                    <p>- CSS</p>
+                    <p>- WordPress</p><br>
+                 <p>Interested? <a href = "#contact">Contact me!</a></p><br>
+                  <a href = "http://mara-anya.maramandernach.net/wordpress/" target = _blank ><button>View Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/ttl.png" alt = "To The Limit Website WordPress" height="100%">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>TTL - To the Limit WordPress</h3>
+                  <p>Class - Introduction to Wordpress</p>
+                    <p>WordPress</p>
+					<p>Plug ins</p>
+					<p>my php admins</p>
+                    <p>- HTML</p>
+                    <p>- CSS</p><br>
+                  <a href = "http://ttl.maramandernach.net/wordpress/" target = _blank ><button>View Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="images/" alt = "...">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>Coming Soon</h3>
+                  <p>Class - </p>
+					<p>- </p><br>
+                  <a href = "#" target = _blank ><button>View Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="images/" alt = "...">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>Coming Soon</h3>
+					<p>Class - </p>
+                  <p>- HTML</p><br>
+
+                  <a href = "#" target = _blank ><button>View Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="images/usersApplication.png" alt = "...">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>Coming Soon</h3>
+					<p>Class - </p>
+                  <p>- HTML</p><br>
+                  <a href = "#" target = _blank ><button>View Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="images/teamVintageCoop.png" alt = "...">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>Coming Soon</h3>
+                  <p>Class - </p>
+                  <p>- HTML</p><br>
+                  <a href = "#" target = _blank ><button>View Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="images/" alt = "...">
+                </div>
+                <div class="flip-box-back"><br>
+                  <h3>Coming Soon</h3>
+					<p>Class - </p>
+                  <p>- HTML</p><br>
+                  <a href = "..." target = _blank ><button>View Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <h2>Additional Practice</h2>
+        <div class = "row">
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/" alt = "...">
+                </div>
+              <div class="flip-box-back"><br>
+            <h3>Coming Soon</h3>
+				  <p>Class -</p>
+              <p>- HTML</p><br>
+            <a href = "#" target = _blank><button>View Website</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "images/" alt = "...">
+                </div>
+              <div class="flip-box-back"><br>
+            <h3>Coming Soon</h3>
+				  <p>Class -</p>
+              <p>- HTML</p><br>
+            <a href = "#" target = _blank><button>View Website</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "row">
+      <div class = "project">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src = "images/bank.png" alt = "Bank Application">
+            </div>
+            <div class="flip-box-back"><br>
+              <img src = "images/" alt = "...">
+                </div>
+              <div class="flip-box-back"><br>
+            <h3>Coming Soon</h3>
+				  <p>Class -</p>
+              <p>- HTML</p><br>
+            <a href = "#" target = _blank><button>View Website</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "project">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src = "images/" alt = "...">
+                </div>
+              <div class="flip-box-back"><br>
+            <h3>Coming Soon</h3>
+				  <p>Class -</p>
+              <p>- HTML</p><br>
+            <a href = "#" target = _blank><button>View Website</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "row">
+      <div class = "project">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src = "images/" alt = "...">
+                </div>
+              <div class="flip-box-back"><br>
+            <h3>Coming Soon</h3>
+				  <p>Class -</p>
+              <p>- HTML</p><br>
+            <a href = "#" target = _blank><button>View Website</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "project">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src = "images/" alt = "...">
+                </div>
+              <div class="flip-box-back"><br>
+            <h3>Coming Soon</h3>
+				  <p>Class -</p>
+              <p>- HTML</p><br>
+            <a href = "#" target = _blank><button>View Website</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="row">
+        <div class = "project">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src = "images/" alt = "...">
+                </div>
+              <div class="flip-box-back"><br>
+            <h3>Coming Soon</h3>
+				  <p>Class -</p>
+              <p>- HTML</p><br>
+            <a href = "#" target = _blank><button>View Website</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+      <div id = "contact">
+        <h1 class = "warning"></h1>
+        <form method = "post" action="" name="contactForm" id="contactForm">
+          <h1>Contact Me!</h1>
+          <br><br>
+          <label for="firstName">*First Name:</label><br>
+          <td class="error"></td><br>
+          <input type="text" id="firstname" name="firstName"><br><br>
+
+          <label for="lastName">*Last Name:</label><br>
+          <td class="error"></td><br>
+          <input type="text" id="lastName" name="lastName"><br><br>
+
+          <!--Honey Pot-->
+          <label class="ohnohoney" for="website">Website:</label>
+          <input class="ohnohoney" type="website" id="website" name="website">
+          <!--End Honey Pot-->
+
+          <label for="email">*Email:</label><br>
+          <td class="error"></td><br>
+          <input type="email" id="email" name="email"><br><br>
+
+          <label for="phoneNumber">*Phone Number:</label><br>
+          <td class="error"></td><br>
+          <input type="tel" id="phoneNumber" name="phoneNumber"><br><br>
+
+          <label for="message">*Message:</label><br>
+          <td class="error"></td><br>
+          <textarea id ="message" name="message" cols="30" rows="10"></textarea><br><br>
+
+          <input type="reset" id="reset" name="reset" value="Reset">
+          <input type="submit" id="submitForm" name="submitForm" value="Submit">
+        </form>
+      </div>
+
+      <footer>
+        <h1>Mara Mandernach</h1><br>
+        <div class="footerMenu">
+          <a href="#top">Home</a> |
+          <a href="#about">About</a> |
+          <a href="#resume">Resume</a> |
+          <a href="#portfolio">Portfolio</a> |
+          <a href="http://maramandernach.net/homework.html">Homework</a> |
+          <a href="#contact">Contact</a>
+        </div>
+        <div class = "footerSocials">
+          <a href="https://www.linkedin.com/in/mara-anya-mandernach-54899586/" target=_blank class="fa fa-linkedin"></a>
+        </div>
+      </footer>
+    </div>
+</head>
+
+<body>
+</body>
+</html>

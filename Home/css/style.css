@@ -1,0 +1,689 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+  @font-face {
+      font-family: 'alpha_echoregular';
+      src: url('../fonts/alpha_echo-webfont.eot');
+      src: url('../fonts/alpha_echo-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/alpha_echo-webfont.woff2') format('woff2'),
+           url('../fonts/alpha_echo-webfont.woff') format('woff'),
+           url('../fonts/alpha_echo-webfont.ttf') format('truetype'),
+           url('../fonts/alpha_echo-webfont.svg#alpha_echoregular') format('svg');
+      font-weight: normal;
+      font-style: normal;}
+
+  @font-face {
+      font-family: 'acmeregular';
+      src: url('../fonts/Acme-Regular-webfont.eot');
+      src: url('../fonts/Acme-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/Acme-Regular-webfont.woff2') format('woff2'),
+           url('../fonts/Acme-Regular-webfont.woff') format('woff'),
+           url('../fonts/Acme-Regular-webfont.ttf') format('truetype'),
+           url('../fonts/Acme-Regular-webfont.svg#acmeregular') format('svg');
+      font-weight: normal;
+      font-style: normal;}
+
+  @font-face {
+      font-family: 'aliceregular';
+      src: url('../fonts/Alice-Regular-webfont.eot');
+      src: url('../fonts/Alice-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/Alice-Regular-webfont.woff2') format('woff2'),
+           url('../fonts/Alice-Regular-webfont.woff') format('woff'),
+           url('../fonts/Alice-Regular-webfont.ttf') format('truetype'),
+           url('../fonts/Alice-Regular-webfont.svg#aliceregular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'indie_flowerregular';
+      src: url('../fonts/IndieFlower-webfont.eot');
+      src: url('../fonts/IndieFlower-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/IndieFlower-webfont.woff2') format('woff2'),
+           url('../fonts/IndieFlower-webfont.woff') format('woff'),
+           url('../fonts/IndieFlower-webfont.ttf') format('truetype'),
+           url('../fonts/IndieFlower-webfont.svg#indie_flowerregular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .topnav {
+    background-color: #333;
+    overflow: hidden;
+    padding-left: 5%;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    border-bottom: thin solid black;
+  }
+
+  .topnav button {
+    display: none;
+    margin-left: 0%;
+    padding: 1%;
+  }
+
+  #contact, #portfolio {
+    padding-top: 50px;
+  }
+
+  #resume h1 {
+    margin-top: 50px;
+  }
+
+  .socials {
+    margin-top: 40px;
+  }
+
+  .topnav #expandMenu {
+    background-color: #333;
+    border: none;
+  }
+
+  .topnav #shrinkMenu {
+    background-color: #333;
+    border: none;
+  }
+
+  .topnav img {
+    text-align: center;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'acmeregular';
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    text-shadow: none;
+  }
+
+  .topnav a.active {
+    background-color: #0073c4;
+    color: white;
+  }
+
+  div.container {
+    width: 100%;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 200%;
+    text-align: center;
+    color: white;
+  }
+
+  .centered h1 {
+    font-family: 'acmeregular';
+    text-shadow: 2px 2px 2px black;
+  }
+
+  .centered p {
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px 1.5px black;
+  }
+
+  div.socials {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: black;
+    font-size: 150%;
+    font-family: Helvetica, Arial, Sans-Serif;
+    border: thick solid white;
+  }
+
+  .fa-github {
+    background: black;
+    color: white;
+    margin: 1%;
+    padding: 1%;
+    font-size: 50px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 2px solid white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    margin: 1%;
+    padding: 1%;
+    font-size: 49px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 2px solid white;
+  }
+
+  .fa:hover {
+    border-style: dashed;
+  }
+
+
+  div#about {
+    color: black;
+    text-align: center;
+    padding: 2%;
+    background-image: url("../images/paper.jpg");
+    font-size: 150%;
+  }
+
+  #about h1 {
+    font-weight: bold;
+    font-size: 200%;
+    font-family: 'indie_flowerregular';
+  }
+
+  div.flex {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .flex p {
+    width: 60%;
+    margin-left: 10%;
+    line-height: 60px;
+    font-family: 'indie_flowerregular';
+    color: black;
+  }
+
+  .image {
+    width: 50%;
+  }
+  .image img {
+    width: 90%;
+    border-width: 30px;
+    border-image: url("../images/wood.jpg") 300 round;
+    box-shadow: 10px 10px 6px #333;
+  }
+
+  #resume {
+    text-align: center;
+    padding: 2%;
+    color: #383030;
+    font-family: 'acmeregular';
+    font-size: 150%;
+    background-color: #f7f7f7;
+  }
+
+  #resume h1 {
+    color: white;
+    background-color: #383030;
+  }
+
+  #resume img {
+    width: 20%;
+    margin: 3%;
+    box-shadow: 10px 10px 6px #333;
+  }
+
+  #resume img:hover {
+    transform: scale(1.2, 1.2);
+    transition-duration: 1s;
+  }
+
+  div#portfolio {
+    text-align: center;
+    color: white;
+    background-color: #333;
+  }
+
+  #portfolio h1 {
+    font-family: 'alpha_echoregular';
+    padding-top: 2%;
+    font-size: 250%;
+  }
+
+  #portfolio h2, h3, p {
+    line-height: 30px;
+    font-family: 'acmeregular';
+  }
+
+  .row {
+    display: flex;
+    margin-bottom: 2%;
+    margin: auto;
+    margin-left: 5%;
+  }
+
+  .project {
+    width: 50%;
+    flex: 100%;
+    padding: 3%;
+  }
+
+  .project img {
+    width: 100%;
+  }
+
+  .flip-box {
+    background-color: transparent;
+    width: 500px;
+    height: 460px;
+    perspective: 1000px;
+    margin-bottom: 5%;
+  }
+
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-box-front {
+    background-color: black;
+    color: black;
+  }
+
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-back > h3, p {
+    width: 80%;
+    margin: auto;
+    line-height: 30px;
+  }
+
+  .flip-box-back > h3 {
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .flip-box-back > p {
+    font-size: 120%;
+  }
+
+  .flip-box-back button {
+    background-color: black;
+    color: white;
+    font-style: bold;
+    line-height: 30px;
+    font-size: 80%;
+    box-shadow: 5px 5px 6px #333;
+  }
+
+  .flip-box-back button:hover {
+    background-color: white;
+    color: black;
+    font-style: bold;
+  }
+
+  #contact {
+    background-color: white;
+    text-align: center;
+    font-size: 80%;
+  }
+
+  #contact form {
+    color: red;
+    background-color: black;
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 3%;
+    border-radius: 20px;
+  }
+
+  #contact h1 {
+    color: red;
+    font-family: sans-serif;
+  }
+
+  #contact .warning {
+    font-size: 345%;
+  }
+
+  #contact form h1 {
+    color: white;
+    font-family: 'acmeregular';
+  }
+
+  #contact form label {
+    color: white;
+    font-family: sans-serif;
+  }
+
+  input[type=submit], [type=reset] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 20%;
+    margin: 2%;
+    line-height: 30px;
+  }
+
+  form input {
+    width: 70%;
+    line-height: 30px;
+  }
+
+  form textarea {
+    width: 70%;
+  }
+
+  .ohnohoney {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    z-index: -1;
+  }
+
+  footer {
+    background-color: #171716;
+    text-align: center;
+    font-size: 150%;
+    padding: 2%;
+  }
+
+  footer h1, div {
+    color: white;
+    font-family: 'acmeregular';
+  }
+
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  footer.footerMenu a {
+    color: white;
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-shadow: 1px 1px gray;
+    text-decoration: underline;
+  }
+
+  footer.footerMenu a:hover {
+    text-shadow: 1px 1px gray;
+    text-decoration: underline;
+  }
+
+  footer.footerSocials {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+
+@media only screen and (max-width: 1300px) {
+
+  .centered {
+    top: 35%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .centered > p {
+    line-height: 50px;
+  }
+
+  .flip-box {
+    width: 400px;
+    height: 350px;
+  }
+
+  .flip-box-back > h3, p {
+    width: 95%;
+    margin: auto;
+    line-height: 25px;
+  }
+
+  .flip-box-back > h3 {
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+
+}
+
+@media only screen and (max-width: 1100px) {
+  #about.flex img {
+    width: 40%;
+  }
+
+  .flip-box:active .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .centered {
+    top: 25%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .row {
+    display: block;
+    width: 80%;
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  div.flex {
+    font-size: 120%;
+  }
+  div.flex {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .image {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .flex p {
+    width: 100%;
+    margin-left: 1%;
+  }
+
+  #resume img {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container img {
+    height: 600px;
+  }
+  .centered {
+    top: 25%;
+  }
+
+  .socials p {
+    font-size: 100%;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .centered {
+    font-size: 150%;
+    top: 35%;
+  }
+
+  .topnav a {
+    width: 100%;
+    display: none;
+  }
+
+  .topnav {
+    padding: 0%;
+    width: 100%;
+  }
+
+  .topnav #expandMenu {
+    display: block;
+  }
+
+  .topnav img {
+    display: block;
+  }
+
+  .row {
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  footer {
+    font-size: 120%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container img {
+    height: 500px;
+  }
+
+  .centered {
+    font-size: 100%;
+    top: 40%;
+  }
+
+  .topnav {
+    display: block;
+  }
+
+  #resume img {
+    width: 60%;
+    margin-bottom: 8%;
+  }
+
+  .flip-box {
+    width: 400px;
+    height: 350px;
+  }
+
+  .project {
+    width: 80%;
+    padding: 3%;
+    margin: 0;
+  }
+
+  .flip-box-back > h3, p {
+    width: 95%;
+    margin: auto;
+    line-height: 25px;
+  }
+
+  .flip-box-back > h3 {
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .row {
+    margin: 0 auto;
+  }
+
+  input[type=submit], [type=reset] {
+    line-height: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 416px) {
+
+  .flip-box p:nth-of-type(1) {
+    font-weight: bold;
+    margin-top: 0.5%;
+  }
+  .flip-box {
+    width: 115%;
+    height: 310px;
+    margin-bottom: 10%;
+  }
+
+  .flip-box p {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 20px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
+  footer {
+    line-height: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 376px) {
+
+  .flip-box {
+    width: 115%;
+    height: 280px;
+    margin-bottom: 20%;
+  }
+
+  .flip-box p {
+    font-size: 90%;
+  }
+
+}
